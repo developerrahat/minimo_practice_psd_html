@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family:'PlayfairDisplay-Regular';
+    src: url(../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf);
+}
+   @font-face {
+    font-family:'PlayfairDisplay-Italic';
+    src: url(../fonts/Playfair_Display/PlayfairDisplay-Italic.ttf);
+   }
+
+   @font-face {
+    font-family:'PlayfairDisplay-Bold';
+    src: url(../fonts/Playfair_Display/PlayfairDisplay-Bold.ttf);
+   }
+
+    @font-face {
+        font-family:'PlayfairDisplay-Black';
+    src: url(../fonts/Playfair_Display/PlayfairDisplay-Black.ttf);
+    }
+
+@font-face {
+    font-family: 'Ubuntu-Light';
+    src: url(../fonts/Ubuntu/Ubuntu-Light.ttf);
+}
+
+body{
+    font-family:'PlayfairDisplay-Regular';
+    color: #626262;
+
+}
+
+/* header css start */
+    .header-section{
+        padding: 30px 0;
+    }
+    .container{
+        width: 80%;
+        margin: 0 auto;
+        overflow: hidden;
+        /* border: 1px solid red; */
+    }
+    .header-logo {
+        width: 12%;
+        float: left;
+        /* border: 1px solid; */
+        margin-top: 15px;
+    }
+    .header-logo img{
+        width: 100%;
+    }
+    .header-menu{
+        width: 88%;
+        float: right;
+        /* border: 1px solid blue; */
+    }
+    .header-menu ul{
+        text-align: right;
+    }
+    .header-menu ul li{
+        display: inline-block;
+    }
+    .header-menu ul li a{
+        display: block;
+        margin: 20px 60px;
+        font-size: 16px;
+        color: #626262;
+        text-decoration: none;
+        text-transform: uppercase;
+        position: relative;
+
+    }
+    .header-menu ul li:last-child a{
+        margin-right: 0;
+    }
+    .header-menu ul li a::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        width:0;
+        height: 1.6px;
+        background: #626262;
+        visibility: hidden;
+        opacity: 0;
+        transition: .4s;
+
+    }
+    .header-menu ul li a:hover::after{
+        width: 100%;
+        visibility: visible;
+        opacity: 1;
+    }
+/* header css end */
+
+/* banner css start */
+    .banner-section{}
+    .banner-img{
+        
+    }
+    .banner-img img{
+        width: 100%;
+    }
+/* banner css end */
+
+/* banner bottom getaway css start */
+    .banner-b-getaway{
+        padding: 80px 0;
+    }
+    .container2{
+        width: 70%;
+        margin: 0 auto;
+        overflow: hidden;
+        /* border: 1px solid darkgreen; */
+
+    }
+    .getaway-content{}
+    .md-light{
+        font-family: 'Ubuntu-Light';
+        color: #b4ad9e;
+        text-transform: uppercase;
+        font-size: 15px;
+    }
+    .md-title{
+        font-size: 30px;
+        margin: 20px 0 30px;
+    }
+    .md-paragraph{
+        font-size: 15px;
+        line-height: 28px;
+        margin-bottom: 50px;
+        
+
+    }
+/* banner bottom getaway css end */
+
+/* minimo blog css start */
+    .blog-section{
+        padding: 80px 0;
+    }
+    .blog-item{
+        width: 47%;
+        float: left;
+        margin: 40px 0;
+
+    }
+    .blog-item:nth-child(even) {
+        margin-left: 6%;
+    
+    }
+    .blog-img img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .mt20mb25{
+        margin: 20px 0 25px;
+    }
+    .blog-text p{
+        margin-bottom: 20px;
+    }
+/* minimo blog css end */
+
+/* minimo newslatter css start */
+    .newslatter-section{
+        padding: 80px 0;
+        background: #f0f0f0;
+    }
+    .newslatter-title{
+        text-align: center;
+    }
+    .newslatter-title h1{
+        color: #333333;
+    }
+    .newslatter-form{
+        text-align: center;
+        margin: 60px 0 30px;
+       
+    }
+    .form-submit{
+        position: relative;
+    }
+    .newslatter-form input{
+        width: 400px;
+        height: 40px;
+        font-family:'PlayfairDisplay-Regular';
+        color: #626262;
+        padding: 0 10px;
+        font-size: 15px;
+        border: none;
+        background: transparent;
+        border-bottom: 1px solid black;
+          
+    }
+    .newslatter-form input:focus{
+        outline: none;
+    }
+    .newslatter-form button {
+        position: absolute;
+        left: 390px;
+        top: 12px;
+        right: 0;
+        margin: auto;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+    }
+/* minimo newslatter css end */
+
+/* blog2 css start */
+    .blog-2{
+        padding: 80px 0;
+    }
+    .blog-item-right{
+        width: 47%;
+        float: right;
+        margin-bottom: 40px;
+    }
+    .blog2-item{
+        margin-top: 0;
+    }
+
+    .blog2-button{
+        text-align: center;
+    }
+    .blog2-button button{
+        width: 150px;
+        height: 50px;
+        font-size: 20px;
+        color: #626262;
+        margin: 80px 0 30px;
+        background: transparent;
+        border: 1px solid #DDD;
+        cursor: pointer;
+        
+    }
+/* blog2 css end */
+
+/* FOOTER CSS START */
+    .footer-section{
+        background: #f0f0f0;
+        padding: 30px 0;
+    }
+    .f-left{
+        width: 50%;
+        float: left;
+    }
+    .f-left ul{}
+    .f-left ul li{
+        display: inline-block;
+    }
+    .f-left ul li a{
+        display: block;
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+        margin-right: 15px;
+    }
+
+    .f-right{
+        float: right;
+        width: 50%;
+    }
+    .f-right ul{
+        text-align: right;
+    }
+    .f-right ul li span{
+        color: black;
+    }
+    .f-right ul li{
+        display: inline-block;
+    }
+    .f-right ul li a{
+        display: block;
+        font-size: 18px;
+        margin: 0 10px;
+        color: black;
+        transition: .4s;
+    }
+    .f-right ul li:last-child a{
+        margin-right: 0;
+    }
+    .f-right ul li a:hover{
+        color: red;
+    }
+/* FOOTER CSS END */
